@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>User Registration Form</h1>
+    </header>
+
+    <main>
+      <form action="#" method="POST">
+        <!-- Account Information -->
+        <fieldset>
+          <legend>Account</legend>
+
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" required />
+          <br /><br />
+
+          <label for="password">Password</label><br />
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="8"
+          />
+        </fieldset>
+
+        <br />
+
+        <!-- Personal Information -->
+        <fieldset>
+          <legend>Personal</legend>
+
+          <label for="fullname">Full Name</label><br />
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            required
+            minlength="3"
+            maxlength="30"
+          />
+          <br /><br />
+
+          <label for="phone">Phone</label><br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{10}"
+            title="Enter exactly 10 digits"
+            required
+          />
+          <br /><br />
+
+          <label for="birthday">Birthday</label><br />
+          <input type="date" id="birthday" name="birthday" required />
+          <br /><br />
+
+          <label for="age">Age</label><br />
+          <input type="number" id="age" name="age" min="18" max="60" required />
+        </fieldset>
+
+        <br />
+
+        <!-- Preferences -->
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <p>Gender</p>
+
+          <input type="radio" id="male" name="gender" value="Male" required />
+
+          <label for="male">Male</label>
+
+          <input type="radio" id="female" name="gender" value="Female" />
+
+          <label for="female">Female</label>
+
+          <br /><br />
+
+          <p>Hobbies</p>
+
+          <input type="checkbox" id="coding" name="hobbies" value="Coding" />
+
+          <label for="coding">Coding</label>
+
+          <input type="checkbox" id="gaming" name="hobbies" value="Gaming" />
+
+          <label for="gaming">Gaming</label>
+
+          <input type="checkbox" id="reading" name="hobbies" value="Reading" />
+
+          <label for="reading">Reading</label>
+
+          <br /><br />
+
+          <label for="country">Country</label><br />
+
+          <select id="country" name="country" required>
+            <option value="">-- Select Country --</option>
+
+            <optgroup label="Middle East">
+              <option value="Syria">Syria</option>
+              <option value="Jordan">Jordan</option>
+              <option value="Saudi Arabia">Saudi Arabia</option>
+            </optgroup>
+
+            <optgroup label="Europe">
+              <option value="Germany">Germany</option>
+              <option value="France">France</option>
+              <option value="Netherlands">Netherlands</option>
+            </optgroup>
+          </select>
+        </fieldset>
+
+        <br />
+
+        <button type="submit">Register</button>
+      </form>
+
+      <br /><br />
+
+      <table border="1">
+        <caption>
+          Sample Submitted Entries
+        </caption>
+
+        <thead>
+          <tr>
+            <th scope="col">Full Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Country</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Hamza Ahmad</td>
+            <td>hamza@gmail.com</td>
+            <td>0991234567</td>
+            <td>Syria</td>
+          </tr>
+
+          <tr>
+            <td>Ali Omar</td>
+            <td>ali@gmail.com</td>
+            <td>0987654321</td>
+            <td>Germany</td>
+          </tr>
+
+          <tr>
+            <td>Sara Khaled</td>
+            <td>sara@gmail.com</td>
+            <td>0971122334</td>
+            <td>Netherlands</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Registration Form</p>
+    </footer>
+  </body>
+</html>

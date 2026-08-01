@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>signup page</title>
+  </head>
+  <body>
+    <header>
+      <h1>Signup Form</h1>
+    </header>
+
+    <main>
+      <form action="signup.html" method="GET">
+        <section>
+          <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name</label><br />
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              required
+              minlength="3"
+              maxlength="30"
+            />
+            <br /><br />
+
+            <label for="email">Email</label><br />
+            <input type="email" id="email" name="email" required />
+            <br /><br />
+
+            <label for="password">Password</label><br />
+            <input type="password" id="password" name="password" required />
+            <br /><br />
+
+            <label for="birthday">Birthday</label><br />
+            <input type="date" id="birthday" name="birthday" />
+          </fieldset>
+        </section>
+
+        <br />
+
+        <section>
+          <fieldset>
+            <legend>Contact Information</legend>
+
+            <label for="website">Website</label><br />
+            <input type="url" id="website" name="website" />
+            <br /><br />
+
+            <label for="phone">Phone</label><br />
+            <input type="tel" id="phone" name="phone" />
+            <br /><br />
+
+            <label for="age">Age</label><br />
+            <input type="number" id="age" name="age" min="1" max="120" />
+          </fieldset>
+        </section>
+
+        <br />
+
+        <section>
+          <fieldset>
+            <legend>Upload</legend>
+
+            <label for="files">Choose Files</label><br />
+            <input type="file" id="files" name="files" multiple />
+
+            <input type="hidden" name="role" value="student" />
+          </fieldset>
+        </section>
+
+        <br />
+
+        <section>
+          <fieldset>
+            <legend>Verification</legend>
+
+            <label for="code">5-Digit Code</label><br />
+            <input
+              type="text"
+              id="code"
+              name="code"
+              pattern="[0-9]{5}"
+              title="Enter exactly five digits"
+            />
+          </fieldset>
+        </section>
+
+        <br />
+
+        <section>
+          <fieldset>
+            <legend>Gender</legend>
+
+            <input type="radio" id="male" name="gender" value="Male" />
+
+            <label for="male">Male</label>
+
+            <br />
+
+            <input type="radio" id="female" name="gender" value="Female" />
+
+            <label for="female">Female</label>
+          </fieldset>
+        </section>
+
+        <br />
+
+        <section>
+          <fieldset>
+            <legend>Hobbies</legend>
+
+            <input type="checkbox" id="coding" name="hobbies" value="Coding" />
+
+            <label for="coding">Coding</label>
+
+            <br />
+
+            <input type="checkbox" id="gaming" name="hobbies" value="Gaming" />
+
+            <label for="gaming">Gaming</label>
+
+            <br />
+
+            <input
+              type="checkbox"
+              id="reading"
+              name="hobbies"
+              value="Reading"
+            />
+
+            <label for="reading">Reading</label>
+          </fieldset>
+        </section>
+
+        <br />
+
+        <section>
+          <fieldset>
+            <legend>Country</legend>
+
+            <label for="country">Country</label><br />
+
+            <select id="country" name="country">
+              <optgroup label="Middle East">
+                <option value="syria">Syria</option>
+                <option value="jordan">Jordan</option>
+                <option value="saudi">Saudi Arabia</option>
+              </optgroup>
+
+              <optgroup label="Europe">
+                <option value="netherlands">Netherlands</option>
+                <option value="germany">Germany</option>
+                <option value="france">France</option>
+              </optgroup>
+            </select>
+          </fieldset>
+        </section>
+
+        <br />
+
+        <section>
+          <fieldset>
+            <legend>Notes</legend>
+
+            <label for="notes">Notes</label><br />
+
+            <textarea id="notes" name="notes" rows="5" cols="40">
+Write your notes here...</textarea
+            >
+          </fieldset>
+        </section>
+
+        <br />
+
+        <button type="submit">Sign Up</button>
+        <button type="button">Cancel</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Kayfa Academy</p>
+    </footer>
+  </body>
+</html>
