@@ -1,0 +1,601 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hamza Haj Esteifi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="#home" class="logo">Hamza<span>.</span></a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="hero-copy">
+          <p class="hero-hello">Hello, I'm</p>
+          <h1>Hamza Haj Esteifi</h1>
+          <p class="hero-role">Computer Science Student</p>
+          <p class="hero-intro">
+            I study computer science in Casablanca and spend the rest of the
+            week turning class briefs into pages that hold up on a laptop and on
+            a phone. Right now that means HTML, CSS layout, and not leaving the
+            spacing to luck.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-primary">
+              Contact Me
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M5 12h14M13 6l6 6-6 6"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="resume.html" class="btn btn-outline">
+              Download Resume
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 4v12M7 12l5 5 5-5M5 20h14"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="social">
+            <a href="#" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.9 1.52 2.34 1.08 2.91.83.09-.66.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0 0 12 2z"
+                />
+              </svg>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  fill="currentColor"
+                  d="M6.94 8.5H3.75V20h3.19V8.5zM5.34 3.5A1.85 1.85 0 1 0 5.35 7a1.85 1.85 0 0 0-.01-3.5zM20.25 20h-3.18v-5.6c0-1.34-.02-3.06-1.86-3.06-1.87 0-2.16 1.46-2.16 2.96V20H9.87V8.5h3.05v1.57h.04c.42-.8 1.46-1.65 3.01-1.65 3.22 0 3.28 2.12 3.28 4.88V20z"
+                />
+              </svg>
+            </a>
+            <a href="mailto:hamza.hajesteifi@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M4 6h16v12H4z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                />
+                <path
+                  d="M4 7l8 6 8-6"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.8"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img
+            src="images/profile.png"
+            width="380"
+            height="380"
+            alt="Hamza Haj Esteifi"
+          />
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <p class="section-kicker">Get to know me</p>
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-grid">
+          <article class="interest-card">
+            <div class="icon-box" aria-hidden="true">&lt;/&gt;</div>
+            <h3>Layout &amp; UI</h3>
+            <p>
+              I like taking a static design, cutting it into sections, and
+              sitting with Flexbox or Grid until the page matches what I saw on
+              screen. Spacing, type size, the last 10px: that's usually what
+              makes it look finished.
+            </p>
+          </article>
+          <div class="about-text">
+            <p>
+              I'm studying Computer Science at Université Hassan II in
+              Casablanca. The lectures cover the theory; the weekly front-end
+              tasks are where I actually learned to structure a page and style
+              it without guessing.
+            </p>
+            <p>
+              This portfolio is a front-end practice project created with HTML
+              and CSS only. No JavaScript, no framework — just the layout
+              techniques from class, used on one page.
+            </p>
+            <a href="#skills" class="btn btn-primary">See My Skills</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <p class="section-kicker">What I know</p>
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-grid">
+          <article class="skill-card">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path fill="#e34f26" d="M8 4h32l-3 36-13 4-13-4z" />
+              <path fill="#ef652a" d="M24 8v32.2l10.5-3.2L37 8z" />
+              <path
+                fill="#fff"
+                d="M24 21h-7.2l-.4-4.4H24V13H12.2l.2 2.2 1 11.3H24zm0 12.7-6-.8-.4-4.4h-4.4l.8 8.5L24 39z"
+              />
+            </svg>
+            <h3>HTML5</h3>
+          </article>
+          <article class="skill-card">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <path fill="#1572b6" d="M8 4h32l-3 36-13 4-13-4z" />
+              <path fill="#33a9dc" d="M24 8v32.2l10.5-3.2L37 8z" />
+              <path
+                fill="#fff"
+                d="M24 21v3.6h6.8l-.5 5.2L24 31.3v3.8l8.2-2.3.9-10.2.2-1.6H24zm0-8v3.6h11.2l.3-1.8.4-1.8H24z"
+              />
+            </svg>
+            <h3>CSS3</h3>
+          </article>
+          <article class="skill-card">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <rect
+                x="14"
+                y="8"
+                width="20"
+                height="32"
+                rx="3"
+                fill="none"
+                stroke="#3b7cf6"
+                stroke-width="2.4"
+              />
+              <path
+                d="M20 12h8M22 36h4"
+                stroke="#3b7cf6"
+                stroke-width="2.4"
+                stroke-linecap="round"
+              />
+            </svg>
+            <h3>Responsive Design</h3>
+          </article>
+          <article class="skill-card">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <rect
+                x="8"
+                y="12"
+                width="13"
+                height="24"
+                rx="2"
+                fill="none"
+                stroke="#3b7cf6"
+                stroke-width="2.4"
+              />
+              <rect
+                x="27"
+                y="12"
+                width="13"
+                height="24"
+                rx="2"
+                fill="none"
+                stroke="#3b7cf6"
+                stroke-width="2.4"
+              />
+            </svg>
+            <h3>Flexbox</h3>
+          </article>
+          <article class="skill-card">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <rect
+                x="9"
+                y="9"
+                width="13"
+                height="13"
+                rx="1.5"
+                fill="#3b7cf6"
+              />
+              <rect
+                x="26"
+                y="9"
+                width="13"
+                height="13"
+                rx="1.5"
+                fill="#93c5fd"
+              />
+              <rect
+                x="9"
+                y="26"
+                width="13"
+                height="13"
+                rx="1.5"
+                fill="#93c5fd"
+              />
+              <rect
+                x="26"
+                y="26"
+                width="13"
+                height="13"
+                rx="1.5"
+                fill="#3b7cf6"
+              />
+            </svg>
+            <h3>CSS Grid</h3>
+          </article>
+          <article class="skill-card">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <rect
+                x="10"
+                y="8"
+                width="28"
+                height="32"
+                rx="3"
+                fill="none"
+                stroke="#3b7cf6"
+                stroke-width="2.4"
+              />
+              <path
+                d="M16 16h16M16 22h16M16 28h10"
+                stroke="#3b7cf6"
+                stroke-width="2.4"
+                stroke-linecap="round"
+              />
+            </svg>
+            <h3>HTML Forms</h3>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <p class="section-kicker">My practice work</p>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <p class="section-lead">
+          Pages I built during the course. Each one started as a brief and ended
+          as a layout I could actually open in the browser.
+        </p>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 7h16v12H4zM8 7V5h8v2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Recipe Page</h3>
+            <p>
+              A full recipe layout with ingredients, steps, and a prep table.
+              Semantic sections, readable type, and a card that still works when
+              the window gets narrow.
+            </p>
+            <p class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Responsive</span>
+            </p>
+            <a class="project-link" href="../project_3/index.html"
+              >Open project</a
+            >
+          </article>
+          <article class="project-card">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle
+                  cx="12"
+                  cy="8"
+                  r="3.2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+                <path
+                  d="M5 19c1.4-3.2 3.8-4.8 7-4.8s5.6 1.6 7 4.8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Social Links Profile</h3>
+            <p>
+              A small profile card: photo, name, and a stack of links. Mostly
+              Flexbox, a handful of colors, and a hover state that doesn't fight
+              the rest of the card.
+            </p>
+            <p class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Flexbox</span>
+            </p>
+            <a
+              class="project-link"
+              href="../project_4/social-links-profile-main/index.html"
+              >Open project</a
+            >
+          </article>
+          <article class="project-card">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 6h10v7H4zM14 11h6v7h-6zM4 15h8v5H4z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+              </svg>
+            </div>
+            <h3>Testimonials Grid</h3>
+            <p>
+              Five quote cards on a named CSS Grid. The desktop version is
+              uneven on purpose; the mobile version drops to a single column
+              without leftover gaps.
+            </p>
+            <p class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Grid</span>
+            </p>
+            <a class="project-link" href="../project_6/index.html"
+              >Open project</a
+            >
+          </article>
+          <article class="project-card">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <circle
+                  cx="12"
+                  cy="12"
+                  r="8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+                <path
+                  d="M12 8v4l3 2"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <h3>Results Summary</h3>
+            <p>
+              A two-pane results card: score on one side, categories on the
+              other. I used custom properties for the colors and kept the
+              component looking the same from 375px up.
+            </p>
+            <p class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>Design</span>
+            </p>
+            <a class="project-link" href="../project_5/index.html"
+              >Open project</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section education-section">
+        <p class="section-kicker">My academic journey</p>
+        <h2 class="section-title">My <span>Education</span></h2>
+        <div class="education-grid">
+          <article class="edu-card">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M3 9.5 12 5l9 4.5-9 4.5z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7 12v4.5c2 1.5 8 1.5 10 0V12"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+              </svg>
+            </div>
+            <p class="edu-label">Current studies</p>
+            <h3>Computer Science</h3>
+            <p class="edu-place">Université Hassan II · Casablanca</p>
+            <p>
+              Undergraduate program. Coursework on the side of this page:
+              semantic HTML, CSS layout, and building small interfaces from a
+              given design.
+            </p>
+          </article>
+          <article class="edu-card">
+            <div class="project-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 20V8l8-4 8 4v12H4z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M10 20v-6h4v6"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.7"
+                />
+              </svg>
+            </div>
+            <p class="edu-label">Previous education</p>
+            <h3>Baccalaureate — Physical Sciences</h3>
+            <p class="edu-place">Casablanca, Morocco</p>
+            <p>
+              Science track before university. That's the part that made the
+              jump into computer science feel less like a random turn and more
+              like the next step.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <p class="contact-note">
+          A simple HTML form styled with CSS for front-end practice.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2>Let's Connect</h2>
+            <p>
+              If you want to ask about one of the projects, or you just need a
+              second pair of eyes on a layout, write me here.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M4 6h16v12H4zM4 7l8 6 8-6"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  <strong>Email</strong>
+                  <a href="mailto:hamza.hajesteifi@gmail.com"
+                    >hamza.hajesteifi@gmail.com</a
+                  >
+                </span>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M12 21s7-5.4 7-11a7 7 0 1 0-14 0c0 5.6 7 11 7 11z"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                    <circle
+                      cx="12"
+                      cy="10"
+                      r="2.2"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="1.7"
+                    />
+                  </svg>
+                </span>
+                <span>
+                  <strong>Location</strong>
+                  Casablanca, Morocco
+                </span>
+              </li>
+            </ul>
+          </div>
+          <form class="contact-form" action="#" method="get">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input
+                type="email"
+                name="email"
+                placeholder="your.email@example.com"
+              />
+            </label>
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Write your message"
+              ></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary btn-full">
+              Submit
+            </button>
+            <p class="form-note">
+              Form for demonstration only; no server is connected.
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a href="#home" class="logo">Hamza<span>.</span></a>
+      <p>Student portfolio made with HTML and CSS only.</p>
+      <div class="social social-footer">
+        <a href="#" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.52 1.03 1.52 1.03.9 1.52 2.34 1.08 2.91.83.09-.66.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02a9.56 9.56 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.76c0 .26.18.58.69.48A10 10 0 0 0 12 2z"
+            />
+          </svg>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              fill="currentColor"
+              d="M6.94 8.5H3.75V20h3.19V8.5zM5.34 3.5A1.85 1.85 0 1 0 5.35 7a1.85 1.85 0 0 0-.01-3.5zM20.25 20h-3.18v-5.6c0-1.34-.02-3.06-1.86-3.06-1.87 0-2.16 1.46-2.16 2.96V20H9.87V8.5h3.05v1.57h.04c.42-.8 1.46-1.65 3.01-1.65 3.22 0 3.28 2.12 3.28 4.88V20z"
+            />
+          </svg>
+        </a>
+      </div>
+      <p class="copy">© 2026 Hamza Haj Esteifi. All rights reserved.</p>
+    </footer>
+
+    <a href="#home" class="scroll-top" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M6 14l6-6 6 6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </a>
+  </body>
+</html>
