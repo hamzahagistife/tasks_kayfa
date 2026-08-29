@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Average+Sans&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Fredoka:wght@300..700&family=Glory:ital,wght@0,100..800;1,100..800&family=Karla:ital,wght@0,200..800;1,200..800&family=Magra:wght@400;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: vw100;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: hsl(0, 0%, 95%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+
+  background-color: hsl(0, 100%, 78%);
+  box-shadow: 10px 25px 12px 12px rgba(0, 0, 0, 0.095);
+}
+.list-card {
+  display: grid;
+  width: 70%;
+  gap: 30px;
+  grid-template-columns: repeat(4, 240px);
+  grid-template-rows: repeat(2, 250px);
+  grid-template-areas:
+    "card1 card1 card2 card3"
+    "card4 card5 card5 card3";
+}
+.card1 {
+  grid-area: card1;
+}
+.card2 {
+  grid-area: card2;
+}
+.card3 {
+  grid-area: card3;
+}
+.card4 {
+  grid-area: card4;
+}
+.card5 {
+  grid-area: card5;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.card-header img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.card-name {
+  font-size: 12px;
+  font-weight: 600;
+}
+.card-Graduate {
+  font-size: 10px;
+  font-weight: 400;
+}
+.card-text {
+  font-size: 14px;
+  font-weight: 600;
+}
+.card-quote {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.card1 {
+  position: relative;
+  color: hsl(0, 0%, 91%);
+  background-color: hsl(263, 87%, 60%);
+  z-index: 1;
+}
+.card1 .card-text {
+  z-index: 1;
+}
+.card-quote-icon {
+  position: absolute;
+  top: 0;
+  left: 67%;
+  z-index: 0;
+}
+.card2 {
+  color: hsl(0, 0%, 91%);
+  background-color: hsl(217, 19%, 35%);
+}
+.card3 {
+  color: hsl(0, 0%, 9%);
+  background-color: hsl(0, 0%, 100%);
+}
+.card4 {
+  color: hsl(0, 0%, 9%);
+  background-color: hsl(0, 0%, 100%);
+}
+.card5 {
+  color: hsl(0, 0%, 91%);
+  background-color: hsl(219, 29%, 14%);
+}
+.card3 .card-quote {
+  width: 80%;
+}
+
+@media screen and (max-width: 680px) {
+  .container {
+    height: 250vh;
+  }
+
+  .list-card {
+    display: flex;
+    flex-direction: column;
+  }
+  .card1 .card-quote-icon {
+    display: none;
+  }
+}
