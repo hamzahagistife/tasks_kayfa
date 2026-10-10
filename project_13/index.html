@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 6 — Find the Secret Number</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="game" id="game">
+        <h1 class="game-title">Find the Secret Number</h1>
+        <p class="game-hint">I am thinking of a number from 1 to 10.</p>
+
+        <div class="game-controls">
+            <input
+                type="number"
+                id="guess-input"
+                class="guess-input"
+                min="1"
+                max="10"
+                placeholder="1 - 10"
+            >
+            <button type="button" id="check-button" class="btn btn-primary">Check</button>
+        </div>
+
+        <p class="message" id="message">Make your first guess.</p>
+
+        <p class="attempts">Attempts left: <span id="attempts">5</span></p>
+
+        <div class="game-footer">
+            <button type="button" id="reset-button" class="btn">Reset</button>
+            <button type="button" id="help-button" class="btn btn-ghost">How to Play</button>
+        </div>
+    </main>
+
+    <div class="overlay hidden" id="overlay"></div>
+
+    <div class="modal hidden" id="modal">
+        <button type="button" id="close-modal" class="modal-close" aria-label="Close">&times;</button>
+        <h2>How to Play</h2>
+        <ul>
+            <li>A secret number from 1 to 10 is picked for every new game.</li>
+            <li>Type your guess and press <strong>Check</strong> or the <strong>Enter</strong> key.</li>
+            <li>Every wrong guess costs one attempt and tells you Too high or Too low.</li>
+            <li>You win when you find the number, and you lose when the attempts reach 0.</li>
+            <li><strong>Reset</strong> starts a new game with a new secret number.</li>
+        </ul>
+        <p class="modal-tip">Close this box with the X, the overlay, or the Escape key.</p>
+    </div>
+</body>
+</html>

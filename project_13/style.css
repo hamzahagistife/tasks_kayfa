@@ -1,0 +1,205 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f172a;
+    color: #1e293b;
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding: 24px;
+}
+
+/* ---------- Game box ---------- */
+
+.game {
+    width: 100%;
+    max-width: 420px;
+    background-color: #ffffff;
+    border: 3px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 32px 28px;
+    text-align: center;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.35);
+}
+
+.game-title {
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+.game-hint {
+    color: #64748b;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.game-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.guess-input {
+    width: 120px;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+}
+
+.guess-input:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.message {
+    font-size: 19px;
+    font-weight: 600;
+    min-height: 26px;
+    margin-bottom: 14px;
+}
+
+.attempts {
+    color: #475569;
+    margin-bottom: 24px;
+}
+
+.attempts span {
+    font-weight: 700;
+    color: #1e293b;
+}
+
+.game-footer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+    padding: 11px 20px;
+    font-size: 15px;
+    font-family: inherit;
+    border: 2px solid #cbd5e1;
+    border-radius: 10px;
+    background-color: #f8fafc;
+    color: #1e293b;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e2e8f0;
+}
+
+.btn-primary {
+    background-color: #2563eb;
+    border-color: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-ghost {
+    background-color: transparent;
+    border-color: transparent;
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.btn-ghost:hover {
+    background-color: transparent;
+    color: #1d4ed8;
+}
+
+.btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* ---------- Win / lose states ---------- */
+
+.game.win {
+    border-color: #16a34a;
+    background-color: #f0fdf4;
+}
+
+.game.win .message {
+    color: #15803d;
+}
+
+.game.lose {
+    border-color: #dc2626;
+    background-color: #fef2f2;
+}
+
+.game.lose .message {
+    color: #b91c1c;
+}
+
+/* ---------- Help modal ---------- */
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(15, 23, 42, 0.6);
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 430px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 28px 30px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.4);
+}
+
+.modal h2 {
+    margin-bottom: 14px;
+}
+
+.modal ul {
+    padding-left: 20px;
+    line-height: 1.8;
+    color: #334155;
+}
+
+.modal-tip {
+    margin-top: 16px;
+    font-size: 13px;
+    color: #64748b;
+}
+
+.modal-close {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    font-size: 28px;
+    line-height: 1;
+    border: none;
+    background: none;
+    color: #64748b;
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    color: #1e293b;
+}
+
+.hidden {
+    display: none;
+}
