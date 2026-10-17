@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7 — Coffee Order Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <main class="card">
+        <h1>Coffee Shop — New Order</h1>
+
+        <form id="order-form" class="order-form" novalidate>
+            <div class="field">
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Your name">
+                <p class="error" id="name-error"></p>
+            </div>
+
+            <div class="field">
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" placeholder="01xxxxxxxxx">
+                <p class="error" id="phone-error"></p>
+            </div>
+
+            <div class="field">
+                <label for="product">Product</label>
+                <select id="product">
+                    <option value="">Choose a product</option>
+                    <option value="espresso">Espresso — 45 EGP</option>
+                    <option value="latte">Latte — 65 EGP</option>
+                    <option value="croissant">Croissant — 40 EGP</option>
+                </select>
+                <p class="error" id="product-error"></p>
+            </div>
+
+            <div class="field">
+                <label for="quantity">Quantity</label>
+                <input type="number" id="quantity" min="1" max="10" placeholder="1 - 10">
+                <p class="error" id="quantity-error"></p>
+            </div>
+
+            <button type="submit" class="btn">Order</button>
+        </form>
+    </main>
+
+    <section class="orders-area">
+        <h2 class="orders-title">Orders</h2>
+        <div id="orders"></div>
+    </section>
+</body>
+</html>

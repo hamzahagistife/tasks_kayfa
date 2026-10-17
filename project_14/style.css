@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #f1f5f9;
+    color: #1e293b;
+    font-family: "Segoe UI", Arial, sans-serif;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+
+.card,
+.orders-area {
+    width: 100%;
+    max-width: 440px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 30px 28px;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+h1 {
+    font-size: 23px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+/* ---------- Form ---------- */
+
+.field {
+    margin-bottom: 16px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px 12px;
+    font-size: 15px;
+    font-family: inherit;
+    color: #1e293b;
+    background-color: #ffffff;
+    border: 2px solid #cbd5e1;
+    border-radius: 9px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.error {
+    min-height: 18px;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #dc2626;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 6px;
+    padding: 12px;
+    font-size: 16px;
+    font-family: inherit;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+/* ---------- Orders ---------- */
+
+.orders-title {
+    font-size: 17px;
+    margin-bottom: 12px;
+    color: #475569;
+}
+
+.order {
+    background-color: #ffffff;
+    border-left: 5px solid #16a34a;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin-bottom: 12px;
+    line-height: 1.8;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.order p {
+    font-size: 15px;
+}
+
+.order .order-total {
+    font-weight: 700;
+}
+
+.order .free-delivery {
+    display: inline-block;
+    margin-top: 6px;
+    padding: 3px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #15803d;
+    background-color: #dcfce7;
+    border-radius: 999px;
+}
